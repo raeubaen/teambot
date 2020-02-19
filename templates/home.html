@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<style>
+  body {
+    background-color: white ;
+    background-image: url({% static "moby01.jpg" %});
+    background-repeat: no-repeat;
+    background-size: auto 100vh;
+    background-position: center;
+    height: 100%;
+  }
+</style>
+<div class="row">
+  <div class="column" style="text-align:center">
+    <h1>OPERATION MOBY DICK</h1>
+    <h2>Administration</h1><br><br><br>
+    <form action="{% url 'logout' %}" method="GET"><input type="submit" class="buttons" value="Logout"></form><br><br>
+    <div style="width: 80%; display: inline-block">
+      <div style="float: left; width: 40%">
+        <form action="download_players"><input type="submit" class="buttons" value="Download members"></form>
+      </div>
+      <div style="float: right; width: 40%">
+        <form action="download_teams"><input type="submit" class="buttons" value="Download teams"></form>
+      </div>
+    </div>
+    <br><br><br>
+    <div style="width: 80%; display: inline-block">
+      <div style="float: left; width: 40%">
+        <form action="reset"><input type="submit" class="buttons" value="Reset"></form>
+      </div>
+      <div style="float: right; width: 40%">
+        <form action="restart"><input type="submit" class="buttons" value="Restart"></form>
+      </div>
+    </div>
+    <form action="add_captain"><input type="submit" class="buttons" value="Add a Captain"></form><br>
+    <br><br>
+  </div>
+</div>
+{% endblock %}

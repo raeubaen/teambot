@@ -1,0 +1,15 @@
+2019-11-15 12:51:48,723 - DEBUG - Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x7fee1205fcf8>
+2019-11-15 12:51:48,724 - DEBUG - JobQueue thread started
+2019-11-15 12:51:48,724 - DEBUG - dispatcher - started
+2019-11-15 12:51:48,724 - DEBUG - updater - started
+2019-11-15 12:51:48,724 - DEBUG - Updater thread started (polling)
+2019-11-15 12:51:48,725 - DEBUG - Start network loop retry bootstrap del webhook
+2019-11-15 12:51:48,725 - DEBUG - Entering: delete_webhook
+2019-11-15 12:51:48,725 - DEBUG - Starting new HTTPS connection (1): api.telegram.org
+2019-11-15 12:51:48,727 - DEBUG - Dispatcher started
+2019-11-15 12:51:49,309 - DEBUG - https://api.telegram.org:443 "POST /bot779653346:AAGizlAxGwgWRcn3guusFYoA2SeiEvdZSW0/deleteWebhook HTTP/1.1" 200 68
+2019-11-15 12:51:49,311 - DEBUG - True
+2019-11-15 12:51:49,311 - DEBUG - Exiting: delete_webhook
+2019-11-15 12:51:49,312 - DEBUG - Bootstrap done
+2019-11-15 12:51:49,312 - DEBUG - Start network loop retry getting Updates
+2019-11-15 12:51:49,312 - DEBUG - Entering: get_updates

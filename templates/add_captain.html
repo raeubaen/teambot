@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+<style>
+    body {
+      background-color: black
+    }
+  </style>
+<p class="text_class">Inserimento Capitano</p>
+<form action="/send_add_captain/" method="post">{% csrf_token %}
+  <p style="color: white">Nome e Cognome:</p>
+  <input type="text" name="cap_name"><br>
+  <p style="color: white">Chat Id:</p>
+  <textarea name="cap_id" class="input_body" rows="1"></textarea>
+  <br><br>
+  <input type="submit" class="buttons" value="Aggiungi">
+</form>
+<p class="text_class">
+Per conoscere il chat id del capitano da aggiungere, chiedigli di condividerti ciò che ottiene scrivendo /id al bot.<br>
+L'inserimento di un Chat Id sbagliato causa gravi errori nel bot che portano alla sua interruzione,
+con conseguente cambio repentino di umore da parte dell'admin. <br>Per favore, stai attento!<br>
+Per adesso la rimozione di un capitano non è implementata (e probabilmente non lo sarà in futuro),
+quindi sii doppiamente cauto, te ne prego.</p>
+{% else %}
+  <p class="text_class">You are not logged in</p>
+  <a href="{% url 'login' %}">login</a>
+{% endif %}
+{% endblock %}
