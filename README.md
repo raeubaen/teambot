@@ -18,6 +18,7 @@ that is also used to manage and download information collected.
 # Get started:
 To install the project, clone the repo, create a proper virtualenv and 
 run: pip install -r requirements.txt
+
 Write your Python version (up to 3.6) in runtime.txt (check if Heroku supports is) and create
 a postgres database, specifying user, password and dbname in localdb.env
 
