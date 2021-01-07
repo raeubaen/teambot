@@ -13,7 +13,7 @@ future==0.18.2
 gunicorn==20.0.0
 hotxlfp==0.0.6
 idna==2.8
-lxml==4.4.1
+lxml==4.6.2
 pip-autoremove==0.9.1
 ply==3.11
 psycopg2==2.8.4
